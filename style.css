@@ -1,0 +1,284 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* reset */
+
+body {
+  display: flex;
+  font-family: "Lato", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header {
+  width: 300px;
+  height: 800px;
+  background-color: #f8f9fa;
+  /* text-align: center; */
+}
+.header .logo {
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.header-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 620px;
+}
+.header .nav a:hover {
+  width: 300px;
+  /* height: 65px; */
+  background-color: #e0e0e0;
+}
+.header .nav a {
+  display: flex;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-style: 16px;
+  line-height: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+.header .nav a span {
+  padding-left: 50px;
+  padding-right: 20px;
+}
+.header .account {
+  display: flex;
+  align-items: center;
+}
+.header .account .pic {
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true);
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 24px;
+  margin-left: 40px;
+}
+.header .account .info {
+  text-align: left;
+  line-height: 1.5;
+  margin-left: 10px;
+}
+.header .account .info .name {
+  font-weight: 500;
+}
+.header .account .info .mail {
+  font-size: 14px;
+  color: #6c757d;
+}
+.content {
+  padding-top: 30px;
+  margin: 0 auto;
+  width: 880px;
+}
+.content .content-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.content .content-nav .nav-info {
+  display: flex;
+}
+.content .content-nav h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-right: 50px;
+}
+.content .content-nav .add a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+.content .content-nav .add span {
+  color: #198754;
+  margin-right: 5px;
+}
+.content .content-nav .add p {
+  color: #000;
+}
+.content table {
+  width: 880px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.content table th p {
+  display: inline;
+}
+.content table th span {
+  color: #198754;
+}
+
+.content table tr {
+  border-bottom: #d8d6d6 solid 1px;
+}
+.content table th {
+  font-weight: 500;
+  border-bottom: #000 solid 1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.content table td {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.content .my-pagination {
+  display: flex;
+  justify-content: end;
+}
+.content .my-pagination ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #198754 solid 1px;
+  border-radius: 2px;
+}
+.content .my-pagination .num {
+  border-right: #198754 solid 1px;
+  /* height: 100%; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.content .my-pagination .num1 {
+  border-left: #198754 solid 1px;
+}
+.content .my-pagination li a {
+  display: block;
+  text-align: center;
+  width: 30px;
+  /* height: 30px; */
+}
+.chevron {
+  color: #198754;
+}
